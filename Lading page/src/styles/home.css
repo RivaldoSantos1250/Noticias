@@ -1,16 +1,108 @@
 #home {
     display: flex;
-    min-height: calc(100vh - 90px);
+    min-height: calc(100vh - 110px);
+    position: relative;
+    z-index: 999;
 }
 
 #cta {
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
 }
 
-#banner  {
-    background: url("src/img/background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
+#cta .title {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+#cta .title > span {
+    font-size: 4rem;
+    color: #4c034d;
+}
+
+#cta .description {
+    font-size: 1.5rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#phone_button {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    background-color: #4c034d;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.social_media_buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social_media_buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #4c034d;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 3s ease;
+}
+
+.fa-whatsapp{
+    color: #00ff15;
+}
+
+.fa-instagram{
+    color: #fffdff;
+}
+
+.fa-facebook{
+    color: #0026ff;
+}
+
+.social_media_buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 65%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 70%;
+    width: fit-content;
+}
+
+.shape {
+    background-color: #4c034d;
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    border-radius: 80% 0% 10% 220%;
+    top: 1;
+    right: 0;
+    z-index: 1;
 }
