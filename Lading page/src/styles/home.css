@@ -52,7 +52,7 @@
     display: flex;
     gap: 18px;
 }
-#buttonrmv{
+#buttonrmv {
     background-color: transparent;
 }
 
@@ -70,15 +70,15 @@
     transition: box-shadow 3s ease;
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
     color: #00ff15;
 }
 
-.fa-instagram{
+.fa-instagram {
     color: #fffdff;
 }
 
-.fa-facebook{
+.fa-facebook {
     color: #0026ff;
 }
 
@@ -88,23 +88,23 @@
 
 #banner {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: end;
     width: 65%;
     z-index: 2;
 }
 
 #banner img {
-    height: 70%;
+    height: 60%;
     width: fit-content;
 }
 
 .shape {
     background-color: #4c034d;
-    width: 65%;
+    width: 58%;
     height: 90%;
     position: absolute;
-    border-radius: 80% 10% 0% 200%;
+    border-radius: 30% 0% 0% 30%;
     top: 1;
     right: 0;
     z-index: 1;
