@@ -87,16 +87,11 @@
 }
 
 #banner {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 65%;
     z-index: 2;
 }
 
 #banner img {
-    height: 60%;
-    width: fit-content;
+    width: 100%;
 }
 
 .shape {
