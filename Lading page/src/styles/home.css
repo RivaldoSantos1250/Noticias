@@ -1,5 +1,6 @@
 #home {
     display: flex;
+    justify-content: space-between;
     min-height: calc(100vh - 110px);
     position: relative;
     z-index: 999;
@@ -87,26 +88,34 @@
 }
 
 #banner {
-    
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #banner img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    z-index: 2;
 }
 
-.shape {
-    background-color: #4c034d;
-    width: 58%;
-    height: 90%;
-    position: absolute;
-    border-radius: 30% 0% 0% 30%;
-    top: 1;
-    right: 0;
-    z-index: 1;
+@media screen and (max-width: 1600px) {
+    #cta .title {
+        font-size: 2.5rem;
+        color: rgb(0, 0, 0);
+    }
+
+    #cta .title > span {
+        font-size: 2.5rem;
+        color: #4c034d;
+    }
+
+    #cta .description {
+        font-size: 1rem;
+    }
+
+    #banner img {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -115,9 +124,27 @@
         padding-top: 0px;
     }
 
-    #banner,
-    #banner img,
-    #home .shape {
+    #banner {
         display: none;
+    }
+
+    #cta {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    #cta .title {
+        font-size: 3rem;
+        color: rgb(0, 0, 0);
+    }
+
+    #cta .title > span {
+        font-size: 3rem;
+        color: #4c034d;
+    }
+
+    #cta .description {
+        font-size: 1.5rem;
     }
 }
